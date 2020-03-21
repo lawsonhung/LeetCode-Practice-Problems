@@ -12,24 +12,37 @@ Input: J = "z", S = "ZZ"
 Output: 0
  */
 
- /**
+ 
+/**
  * @param {string} J
  * @param {string} S
  * @return {number}
  */
 var numJewelsInStones = function(J, S) {
-  let jewels = J.split("");
-  let stones = S.split("");
-  let ans = 0;
-  
-  for(let i = 0; i < jewels.length; i++){
-      for(let j = 0; j < stones.length; j++){
-          // if (jewels[i] === stones[j]){
-          //     ans++;
-          // }
-          (jewels[i] === stones[j]) ? ans++ : null;
+  //     let jewels = J.split("");
+  //     let stones = S.split("");
+  //     let ans = 0;
+      
+  //     for(let i = 0; i < jewels.length; i++){
+  //         for(let j = 0; j < stones.length; j++){
+  //             // if (jewels[i] === stones[j]){
+  //             //     ans++;
+  //             // }
+  //             (jewels[i] === stones[j]) ? ans++ : null;
+  //         }
+  //     }
+      
+  //     return ans;
+      
+      let ans = 0;
+      
+      for(let char of S){
+          // J contains char stone
+          // Chars is J are distinct from one another
+          if (J.lastIndexOf(char) > -1){
+              ans++;
+          }
       }
-  }
-  
-  return ans;
-};
+      
+      return ans;
+  };
