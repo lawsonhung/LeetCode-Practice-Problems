@@ -52,7 +52,7 @@ var getTargetCopy = function(original, cloned, target) {
   console.log("\n");
   
   // if (target.val === cloned.val){
-  if (original === target)){
+  if (original === target){
       console.log("It's a match! cloned is: ", cloned);
       return cloned;
   } else if (cloned.left && cloned.right === null) {
