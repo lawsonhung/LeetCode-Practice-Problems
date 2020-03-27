@@ -35,3 +35,5 @@ var twoSum = function(nums, target) {
   
   return null;
 };
+
+console.log("Running solution.js");
