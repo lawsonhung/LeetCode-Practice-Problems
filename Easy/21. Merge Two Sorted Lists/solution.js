@@ -47,7 +47,6 @@ var mergeTwoLists = function(l1, l2) {
           console.log("Pushing l1 node to ans: ", l1.val);
       } else {
           console.log("Pushing l2 node to ans: ", l2.val);
-          // console.log("l2 is a reference to: ", l2);
           ans.next = new ListNode(l2.val);
           console.log("ans after pushing l2 node: ", ans);
           l2 = l2.next;
