@@ -12,5 +12,12 @@ Output: "hello"
  * @return {string}
  */
 var toLowerCase = function(str) {
-  return str.toLowerCase();
+  // return str.toLowerCase();
+  let ans = "";
+  for (let letter of str){
+      console.log(letter);
+      ans += letter.toLowerCase();
+  }
+  console.log(ans);
+  return ans;
 };
