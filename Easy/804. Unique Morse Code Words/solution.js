@@ -69,4 +69,4 @@ var uniqueMorseRepresentations = function(words) {
     }
     
     return morseWords.length;
-};
+}; 
