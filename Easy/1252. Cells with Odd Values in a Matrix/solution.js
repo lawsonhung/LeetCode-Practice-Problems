@@ -92,7 +92,7 @@ var oddCells = function(n, m, indices) {
       
       let matrix = [...Array(n)].map(() => Array(m).fill(0));
       
-      // console.log(matrix);
+      console.log(matrix);
       
   //     for (let [row,col] of indices) {
   // //      Increment the row
